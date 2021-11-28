@@ -1,14 +1,15 @@
 :root{
-    
-    --theme-color: #FF6C00;
+    /* Theme colors */
+    --theme-color:              #FF6C00;
 
-    --text-primary: #303030;
-    --text-secondary: #555;
-    --text-secondary-lighter: #9DA4BD;
+    /* Text colors */
+    --text-primary:             #303030;
+    --text-secondary:           #555555;
+    --text-secondary-lighter:   #9DA4BD;
 
-    --primary-font: 'Open Sans';
-    --secondary-font: 'Raleway';
-
+    /* Fonts */
+    --primary-font: 'Open Sans', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
 }
 
 body{
@@ -27,6 +28,66 @@ address{
     font-style: normal;
 }
 
+/* =========== Main styles starts here =========== */
+.layout{
+
+}
+
+.section-container{
+
+}
+
+.section-column{
+
+}
+
+.section-suptitle{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.3;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: var(--text-primary);
+}
+
+.section-title{
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+
+    color: var(--text-primary);
+}
+
+.section-title.lighten{
+    color: #FFF;
+}
+
+.section-description{
+    font-size: 14px;
+    line-height: 1.8;    
+    letter-spacing: 0.02em;
+
+    color: var(--text-secondary);
+}
+
+.primary-link{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    /* color: #FFFFFF; */
+}
+
+.primary-link:hover{
+    color: var(--theme-color);
+}
+
+
+/* =========== Main styles ends here =========== */
 
 
 /* =========== Header styles starts here =========== */
@@ -36,7 +97,6 @@ address{
     font-size: 12px;
     line-height: 1.3;
     letter-spacing: 0.1em;
-
     /* color: #FFFFFF; */
 }       
 
@@ -45,27 +105,11 @@ address{
     color: var(--theme-color);
 }
 
-.active-page{
-    color: var(--theme-color);
-}
-
-
 .link-box-phone{
     font-weight: 600;
     font-size: 12px;
     line-height: 1.3;
     letter-spacing: 0.1em;
-
-/* color: #FFFFFF; */
-}
-
-.primary-link{
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.3;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-
     /* color: #FFFFFF; */
 }
 
@@ -89,7 +133,6 @@ address{
     line-height: 1.3;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-
     color: rgba(157, 164, 189, 0.6);
 }
 
@@ -99,15 +142,153 @@ address{
     font-size: 72px;
     line-height: 1.1;
     letter-spacing: 0.05em;
-
-/* color: #FFFFFF; */
+    /* color: #FFFFFF; */
 }
 .subheader{
     font-size: 18px;
     line-height: 1.6;
     letter-spacing: 0.02em;
+    
     color: var(--text-secondary-lighter);
 }
 
-
 /* =========== Header styles ends here =========== */
+
+
+
+
+
+
+
+
+/* =========== AboutUs Section styles starts here =========== */
+
+
+
+/* =========== AboutUs Section styles ends here =========== */
+
+
+
+
+
+
+
+
+
+/* =========== Price Section styles starts here =========== */
+
+
+.price-item-text{
+    font-size: 18px;
+    line-height: 1.6;  
+    letter-spacing: 0.02em;
+    
+    color: var(--text-secondary-lighter);
+}
+
+/* =========== Price Section styles ends here =========== */
+
+
+
+
+
+
+/* =========== WhyUs Section styles starts here =========== */
+
+.advantages-count{
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: var(--text-primary);
+}
+
+.advantages-text{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.3;
+    text-align: center;
+
+    color: var(--text-primary);
+}
+
+/* =========== WhyUs Section styles ends here =========== */
+
+
+
+
+/* =========== Masters Section styles starts here =========== */
+
+.master-name{
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: var(--text-primary);
+}
+
+.master-post{
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.02em;
+    
+    color: var(--theme-color);
+}
+
+/* =========== Masters Section styles ends here =========== */
+
+
+
+
+
+
+
+/* =========== Gallery Section styles starts here =========== */
+
+/* ===========  Gallery Section styles ends here =========== */
+
+
+
+
+
+
+
+/* =========== Footer styles starts here =========== */
+
+.adress-box{
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+
+    color: var(--text-secondary-lighter);
+}
+
+.copyright-text{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.3;
+    letter-spacing: 0.2em;
+
+    color: var(--text-secondary-lighter)
+}
+
+.footer-social-link{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.3;
+    letter-spacing: 0.2em;
+
+    color:var(--text-primary);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus{
+    color: var(--theme-color);
+}
+
+
+/* =========== Footer styles ends here =========== */
