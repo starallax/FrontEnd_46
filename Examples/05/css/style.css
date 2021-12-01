@@ -1,0 +1,88 @@
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+
+
+/* 
+h1{
+    border: 1px solid red;
+}
+h2{
+    border: 1px solid blue;
+    margin-bottom: 50px;
+}
+p{
+    border: 1px solid green;
+
+} */
+
+
+
+ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* li:not(:nth-child(3)):hover{
+    background-color: red;
+} */
+
+/* a - произвольное число
+b - произвольное число
+n - счетчик, начинающий с 0
+
+
+li:nth-child(an - b){
+    background-color: red;
+}
+
+2n - 1
+2 * 0 - 1 = -1
+2 * 1 - 1 = 1
+2 * 2 - 1 = 3
+2 * 3 - 1 = 5 */
+
+/* 4 * 0 = 0
+4 * 1 = 4
+4 * 2 = 8
+
+-0 + 2 = 2
+-1 + 2 = 1
+-2 + 2 = 0 
+-3 + 2 = -1  */
+
+/* 0 + 3 = 3 */
+
+
+/* li:not(:nth-last-child(-n + 3)){
+    background-color: red;
+} */
+
+
+.flex-container{
+    width: 600px;
+    height: 400px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.flex-item{
+    width: 100px;
+    background: skyblue;
+}
+
+.text:not(p){
+    color: red;
+}
+
+
+/* li{
+    display: inline-block;
+} */
