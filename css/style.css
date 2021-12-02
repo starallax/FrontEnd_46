@@ -16,29 +16,40 @@ body{
     font-family: var(--primary-font);
 }
 
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+img{
+    display: block;
+}
+
 ul, ol{
     list-style: none;
+    padding: 0;
 }
 
 a{
     text-decoration: none;
 }
 
-address{
-    font-style: normal;
-}
-
 /* =========== Main styles starts here =========== */
-.layout{
-
-}
 
 .section-container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 130px 40px;
+}
 
+.section-wrapper{
+    width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
 }
 
 .section-column{
-
+    width: calc(50% - 27px);
 }
 
 .section-suptitle{
@@ -74,16 +85,19 @@ address{
 }
 
 .primary-link{
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 1px solid var(--theme-color);
     font-weight: 600;
     font-size: 12px;
     line-height: 1.3;
     letter-spacing: 0.09em;
     text-transform: uppercase;
-    /* color: #FFFFFF; */
+    color: #FFFFFF;
 }
 
 .primary-link:hover{
-    color: var(--theme-color);
+    background-color: var(--theme-color);
 }
 
 
@@ -91,13 +105,40 @@ address{
 
 
 /* =========== Header styles starts here =========== */
+.header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 110px;
+    width: 100%;
+    padding: 0 55px;
+    background-color: teal;
+}
+
+.logo-img{
+    margin-right: 70px;
+}
+
+.nav-links{
+    display: flex;
+}
+
+.nav-item:not(:last-child){
+    margin-right: 40px;
+}
 
 .nav-link{
     font-weight: 600;
     font-size: 12px;
     line-height: 1.3;
     letter-spacing: 0.1em;
-    /* color: #FFFFFF; */
+    color: #FFFFFF;
 }       
 
 .nav-link:hover,
@@ -105,12 +146,26 @@ address{
     color: var(--theme-color);
 }
 
+.link-box{
+    margin-left: auto;
+}
+
 .link-box-phone{
     font-weight: 600;
     font-size: 12px;
     line-height: 1.3;
     letter-spacing: 0.1em;
-    /* color: #FFFFFF; */
+    color: #FFFFFF;
+    margin-right: 40px;
+}
+
+.sidebar{
+    width: 155px;
+    background-color: #fff;
+}
+
+.hero-box{
+    flex-grow: 1;
 }
 
 .sidebar-link{
@@ -163,7 +218,13 @@ address{
 
 /* =========== AboutUs Section styles starts here =========== */
 
+.about-img-box{
+    display: flex;
+}
 
+.about-img-box img:not(:last-child){
+    margin-right: 30px;
+}
 
 /* =========== AboutUs Section styles ends here =========== */
 
@@ -220,6 +281,14 @@ address{
 
 
 /* =========== Masters Section styles starts here =========== */
+.masters-list{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.master-social-list{
+    display: flex;
+}
 
 .master-name{
     font-size: 18px;
@@ -248,7 +317,9 @@ address{
 
 
 /* =========== Gallery Section styles starts here =========== */
-
+.gallery-list{
+    display: flex;
+}
 /* ===========  Gallery Section styles ends here =========== */
 
 
@@ -259,11 +330,16 @@ address{
 
 /* =========== Footer styles starts here =========== */
 
+.footer-box{
+    display: flex;
+}
+
+
 .adress-box{
     font-size: 18px;
     line-height: 1.7;
     letter-spacing: 0.02em;
-
+    font-style: normal;
     color: var(--text-secondary-lighter);
 }
 
@@ -281,7 +357,7 @@ address{
     font-size: 11px;
     line-height: 1.3;
     letter-spacing: 0.2em;
-
+    margin-left: 40px;
     color:var(--text-primary);
 }
 
@@ -290,5 +366,13 @@ address{
     color: var(--theme-color);
 }
 
+
+.copyright{
+    display: flex;
+    height: 127px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 55px;
+}
 
 /* =========== Footer styles ends here =========== */
