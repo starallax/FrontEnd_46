@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #ff9800;
+    color: #fff;
+    padding: 30px;
+}
+section{
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+main{
+    height: 500vh;
+}
+
+.background-box{
+    width: 90%;
+    height: 100vh;
+    border: 10px solid rgba(14, 14, 14, 0.692);
+    padding: 50px;
+    background-color: red;
+    background-image: url(../images/dog.jpg);
+    background-repeat: no-repeat;
+    /* background-position: X Y; */
+    background-position: 0px 0px;
+    /* background-size: X Y; */
+    background-size: 100% 100%;
+
+    /* - background-size 
+    - px, %
+    - contain (Изображение будет увеличиваться, пока не упрется в одну из границ)
+    - cover (Изображение будет пропорционально увеличиваться, пока не заполнит собой объем всего контейнера) */
+
+    background-origin: content-box;
+
+    /* - background-origin (позволяет установить область отображения фона)
+    - padding-box (позволяет устанавливать картинку поверх падингов)
+    - content-box (размещение фона только в контентной части)
+    - border-box (размещение за рамкой) */
+
+    background-clip: content-box;
+
+    background-attachment: fixed;
+
+
+}
+
+
+.sky-box{
+    width: 900px;
+    height: 500px;
+    border: 10px solid rgb(14, 14, 14);
+    padding: 50px;
+    background-color: rgb(79, 86, 184);
+    background-image: linear-gradient(to right top, #0e44f563 10%, #191C2680 100%), url(../images/earth.png), url(../images/planet.png), url(../images/space.png);
+    background-repeat: no-repeat;
+    background-size:cover, 200px 200px, 250px 200px, cover;
+    background-position: center center, right -40px bottom -40px, left top, center center;
+    background-attachment: scroll;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.gradient-box{
+    width: 90%;
+    height: 55vh;
+    margin: 50px auto;
+    border: 5px solid #cec;
+    padding: 50px;
+
+    /* background-image: linear-gradient( skyblue 0% 50%, yellow 50% 100%); */
+
+    /* background-image: radial-gradient(circle at right 80px top 50px, red 0% 10%, orange 10% 100%);
+    */
+}
+
+
+/* .suptitle::before{
+    content: '';
+    height: 3px;
+    width: 200px;
+    margin-right: 20px;
+    background: rgba(157, 164, 189, 0.6);
+}
+
+.suptitle::after{
+    content: '';
+    height: 3px;
+    width: 200px;
+    margin-left: 20px;
+    background: rgba(157, 164, 189, 0.6);
+} */
+
+
+
+
+.shadow-box{
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    border: 5px solid #000;
+    padding: 10px;
+    box-shadow: 20px 20px 10px 0px skyblue, -20px -20px 10px 0px red
+
+    /* 
+    - Принимает в себя 5 значений
+    - Сдвиг по X (Положительные вправо, отрицательные влево)
+    - Сдвиг по Y (Положительные вниз, отрицательные вверх)
+    - Размытие тени
+    - Толщина
+    - Цвет */
+
+}
+
+/* .shadow-box:hover{
+    box-shadow: 20px 20px 10px 0px skyblue
+} */
+
+.shadow-text{
+    text-shadow: 1px 1px 1px skyblue, -1px -1px 1px red;
+        /* 
+    - Принимает в себя 5 значений
+    - Сдвиг по X (Положительные вправо, отрицательные влево)
+    - Сдвиг по Y (Положительные вниз, отрицательные вверх)
+    - Размытие тени
+    - Цвет */
+}
+
+.suptitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
