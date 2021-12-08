@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 8</title>
+    <link rel='stylesheet' href="./css/style.css"/>
+</head>
+<body>
+    <!-- <header>
+        <h1>Lesson 8</h1>
+        <h2>SVG</h2>
+    </header> -->
+
+
+        <!-- <svg width='100' height='100' xmlns='http://www.w3.org/2000/svg'>
+            <path d='M 10 10 H 90 V 90 H 10' fill='red'/>
+        </svg> -->
+
+
+
+        <div class="master-card">
+            <img src="./images/master.jpg" class="master-avatar" alt="Мастер Мишель">
+            <p class="master-name">Michele Doe</p>
+            <span class="master-post">Extreme Barber</span>
+            <ul class="master-social-list">
+                <li>
+                    <!-- Подключение через bg-image -->
+                    <a href="#" class="master-social-link instagram" aria-label="Instagram"></a>
+                </li>
+                <li>
+                    <!-- Способ через тэг img -->
+                    <a href="#" class="master-social-link twitter" aria-label="Twitter">
+                        <img src="./images/twitter.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <!-- Способ подключения через inline SVG -->
+                    <a href="#" class="master-social-link facebook" aria-label="Facebook">
+                        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_202)">
+                                <path d="M13.3308 3.32083H15.1567V0.140833C14.8417 0.0975 13.7583 0 12.4967 0C9.86417 0 8.06084 1.65583 8.06084 4.69917V7.5H5.15583V11.055H8.06084V20H11.6225V11.0558H14.41L14.8525 7.50083H11.6217V5.05167C11.6225 4.02417 11.8992 3.32083 13.3308 3.32083Z"/>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <!-- Спрайт с svg -->
+                    <a href="#" class="master-social-link linkedin" aria-label="LinkedIn">
+                        <svg>
+                            <use href='./images/sprite.svg#linkedin'></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+<!-- 
+        1 Через background-image
+        - Не сможем при наведении с ней взаимодействовать,
+          прийдется подключать такую же картинку, только залитую другим цветом
+        - Не получится использовать спрайты
+        + Иконки будут декоративными, и подгружаться вместе с css
+        + Можно применять псевдоэлементам
+
+        2 Через тэг <img>
+            - Не сможем при наведении с ней взаимодействовать
+            - Отображается в html 
+
+        3 Путем подключения inline SVG 
+            - Не кэшируется браузером. Если будет много иконок сайт будет долго загружаться
+            - Громоздкий код в HTML
+            + Удобное взаимодействие через CSS/HTML 
+
+        4 Путем создания svg спрайтов
+        
+        - Отображается в html, хотя это декоративный элемент
+        + Поскольку идет запрос на спрайт, браузер его кэширует
+        + Удобное взаимодействие через CSS -->
+
+</body>
+</html>

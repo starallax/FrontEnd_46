@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F7F7F7;
+    color: #303030;
+}
+*{
+    box-sizing: border-box;
+}
+header{
+    text-align: center;
+    background-color: #10a8ee;
+    padding: 20px;
+}
+
+section, footer{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    background-color: #00a6ff;
+}
+
+ul,ol{
+    padding-left: 0;
+    list-style-type: none;
+}
+
+
+.master-card{
+    width: 370px;
+    text-align: center;
+    margin: 50px auto;
+    background-color: #303030;
+    padding-bottom: 20px;
+}
+
+.master-name{
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 25px;
+    color: #fff;
+}
+
+.master-post{
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FF6C00;
+}
+
+.master-social-list{
+    display: flex;
+    justify-content: center;
+}
+
+.master-social-list li:not(:last-child){
+    margin-right: 10px;
+}
+
+.master-social-link{
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background-color: #fff;
+}
+
+
+/* Подключение через bg-image  */
+.instagram{
+    background-image: url(../images/instagram.svg);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.instagram:hover{
+    background-image: url(../images/instagram-hover.svg);
+}
+
+
+/* Способ через тэг img */
+.twitter{
+    display: flex;
+    justify-content: center;
+}
+
+.twitter img{
+    width: 20px;
+}
+
+
+/* Способ подключения через inline SVG */
+
+.facebook{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facebook svg{
+    width: 20px;
+    height: 20px;
+    fill: #303030;
+}
+
+.facebook:hover svg{
+    fill: #FF6C00;
+}
+
+
+/* Спрайт с svg */
+.linkedin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linkedin:hover{
+    background-color: skyblue;
+}
+
+.linkedin:hover svg,
+.linkedin:focus svg{
+    fill: #FF6C00;
+}
+
+.linkedin svg{
+    width: 20px;
+    height: 20px;
+    fill: #303030;
+}
