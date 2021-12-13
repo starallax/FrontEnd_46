@@ -1,0 +1,365 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F7F7F7;
+    color: #303030;
+}
+*{
+    box-sizing: border-box;
+}
+header{
+    text-align: center;
+    background-color: #10a8ee;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+section, footer{
+    width: 100%;
+    padding: 50px;
+    background-color: #00a6ff;
+}
+
+ul,ol{
+    padding-left: 0;
+    list-style-type: none;
+}
+
+
+
+
+/* 1.Виды позиционирования */
+
+.layout{
+    width: 100%;
+    height: 200vh;
+    border: 2px solid orange;
+}
+
+
+.relative-container{
+    width: 90%;
+    margin: 0 auto;
+    min-height: 50vh;
+    border: 2px solid red;
+    position: relative;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  skyblue;
+    font-size: 2em;
+}
+
+.relative-box{
+    background-color: rgb(226, 101, 101);
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+
+.absolute-box{
+    background-color: rgb(104, 216, 94);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    top: 50%;
+    /* margin-top: -50px;
+    margin-left: -50px; */
+
+}
+
+
+.fixed-box{
+    background-color: rgb(226, 180, 53);
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+
+}
+
+
+.sticky-box{
+    position: sticky;
+    top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Примеры sticky navbar */
+
+.navbar{
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(135, 207, 235, 0.705);
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.infobox{
+    width: 100%;
+    height: 100px;
+    background-color: #00ffb3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* Sticky sidebar */
+
+.layout{
+    height: 200vh;
+}
+.main{
+    display: flex;
+    padding: 50px;
+    height: 100vh;
+    border-bottom: 2px solid #000;
+}
+
+.sticky-sidebar{
+    width: 400px;
+    height: 450px;
+    background-color: #fff;
+    margin-left: 50px;
+    top: 20px;
+    color: #000;
+    border: 2px solid;
+    position: sticky;
+    top: 50px;
+}
+
+
+
+
+/* Z-index example */
+
+.index-container{
+    width: 90%;
+    height: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 166, 0, 0.575);
+}
+
+.left-box{
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    position: relative;
+    z-index: 10;
+    bottom: -80px;
+    background-color: rgba(0, 255, 0, 0.89);
+}
+
+.right-box{
+    width: 200px;
+    position: relative;
+    z-index:11;
+    background-color: rgba(255, 0, 0, 0.493);
+}
+
+.index-box{
+    width: 100px;
+    height: 100px;
+    color: #000;
+    position: relative;
+}
+
+.index-box:nth-child(1){
+    background-color: skyblue;
+    position: relative;
+    bottom: -40px;
+    z-index: 99999999;
+}
+
+.index-box:nth-child(2){
+    background-color: teal;
+    z-index: 1;
+
+}
+
+
+
+
+/* Transform container */
+
+.transform-container{
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid black;
+    perspective: 1000px;
+
+}
+
+.transform-box{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: skyblue;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.transform-box.translate{
+
+    /* transform: translate(x, y);     */
+    /* translateX(0)
+    translateY(0) */
+    transform: translate(0, 0);
+
+}
+
+.transform-box.rotate{
+    transform: rotate(10deg);
+    background-color: rgb(104, 216, 94);
+}
+
+.transform-box.scale{
+    transform: scale(0.1);
+    background-color: rgb(196, 125, 67);
+}
+
+.transform-box.scale:hover{
+    transform: scale(1);
+}
+
+.transform-box.skew{
+    /* transform: skew(x, y); */
+    transform: skew(10deg, 10deg);
+    background-color: rgb(194, 64, 64);
+}
+
+
+
+/* Transition */
+
+.link-box{
+    width: 100%;
+    padding: 30px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+}
+
+.link{
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid skyblue;
+    background-color: rgb(54, 151, 189);
+/* 
+    transition-duration: .3s;
+    transition-property: background-color;
+    transition-timing-function: linear;
+    transition-delay: .2s; */
+
+    transition: linear background-color .3s;
+}
+
+.link:hover{
+    border: 1px solid rgb(34, 64, 77);
+    background-color: rgb(13, 62, 82);
+}
+
+
+
+
+/* ================================= */
+
+
+.text {
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: #f38181;
+  }
+  .effect {
+    position: relative;
+  }
+  .effect::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    background: #f38181;
+    transition: width 0.5s, left 0.5s;
+  }
+  
+  .effect:hover::after {
+    width: 100%;
+    left: 0;
+  }
+
+
+
+  .animate{
+    width: 86px;
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: #f38181;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .animate:before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0px;
+      transform: translateX(0%);
+      background-color: currentColor;
+      transition: .2s linear transform;
+  }
+
+  .animate:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0px;
+    left: 0;
+    transform: translateX(0%);
+    background-color: currentColor;
+    transition: .2s linear transform;
+}
+
+
+  .animate:hover::before{
+    transform: translateX(100%);
+  }
+
+  .animate:hover::after{
+    transform: translateX(-100%);
+  }
