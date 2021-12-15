@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #252525;
+    color: #fff;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+}
+header{
+    text-align: center;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    background-color: #00a6ff;
+    display: flex;
+    justify-content: space-around;
+    transform: ;
+}
+a{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    background-color: #ff5d2b;
+    border-radius: 25px;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+/* Scene styles here */
+.scene{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(rgb(28, 116, 175), skyblue);
+}
+
+.sun{
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/sun.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.train{
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  bottom: 50px;
+  background-image: url(../images/train.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+}
+
+.grass{
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  background-image: url(../images/grass.png);
+  background-position: center bottom -50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.clouds{
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  background-image: url(../images/cloud.png), url(../images/cloud-1.png), url(../images/cloud-2.png);
+  background-repeat: no-repeat;
+  background-position: top 50px right, top 100px center, top 30px left 200px;
+}

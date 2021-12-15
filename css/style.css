@@ -162,6 +162,11 @@ a{
     position: fixed;
 }
 
+/* .navbar-fixed{
+    background: rgba(0, 0, 0, .5);
+} */
+
+
 .logo-img{
     width: 68px;
     height: 54px;
