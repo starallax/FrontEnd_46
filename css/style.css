@@ -130,6 +130,8 @@ a{
     letter-spacing: 0.09em;
     text-transform: uppercase;
     color: #FFFFFF;
+    transition: 1s linear color, 1s linear background;
+  
 }
 
 .primary-link.darken{
@@ -160,11 +162,16 @@ a{
     width: 100%;
     padding: 0 55px;
     position: fixed;
+    transition: .3s linear background;
 }
 
-/* .navbar-fixed{
+.navbar-fixed{
     background: rgba(0, 0, 0, .5);
-} */
+}
+.navbar-fixed .logo-img{
+    transition: .3s linear fill;
+    fill: #fff;
+}
 
 
 .logo-img{
@@ -211,7 +218,13 @@ a{
     width: 155px;
     background-color: #fff;
     padding: 0 20px 120px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-content: end;
+    justify-content: center;
 }
+
 
 .sidebar-link{
     font-weight: 600;
@@ -219,10 +232,22 @@ a{
     line-height: 1.3;
     letter-spacing: 0.2em;
     align-items: center;
+    transform: rotate(-90deg);
+    margin: 40px 0;
+    position: relative;
 
     color:var(--text-primary);
 }
 
+.sidebar-link:last-of-type:before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    background-color: var(--text-primary);
+    left: -100px;
+    bottom: 50%;
+}
 
 .sidebar-link:hover,
 .sidebar-link:focus{
@@ -409,18 +434,25 @@ a{
     line-height: 1.3;
     text-align: center;
     letter-spacing: 0.05em;
+    position: relative;
 
     color: var(--text-primary);
 }
 
 .advantages-count::after{
     content: '';
-    display: inline-block;
+    position: absolute;
     width: 13px;
     height: 22px;
+    right: -10px;
     background-image: url(../images/icons/cross.svg);
     background-repeat: no-repeat;
     background-position: center;
+
+    animation-name: crazy-rotate;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 .advantages-text{
@@ -431,6 +463,16 @@ a{
     margin-top: 10px;
 
     color: var(--text-primary);
+}
+
+
+@keyframes crazy-rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 /* =========== WhyUs Section styles ends here =========== */

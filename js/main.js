@@ -8,7 +8,7 @@ jQuery(document).ready(function() {
 
 
     // Slow scrolling to sections
-    $(".nav-link").click(function(e){     
+    $(".easy-scroll").click(function(e){     
         e.preventDefault();
         $('html, body').animate({scrollTop: ($(this.hash).offset().top) - 110}, 500);
     });
