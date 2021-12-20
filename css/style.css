@@ -167,6 +167,7 @@ a{
 
 .navbar-fixed{
     background: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(15px);
 }
 .navbar-fixed .logo-img{
     transition: .3s linear fill;

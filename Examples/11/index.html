@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 11</title>
+    <link rel='stylesheet' href="./css/style.css"/>
+</head>
+<body>
+
+    <header>
+        <h1>Lesson 11</h1>
+        <h2>Form inputs</h2>
+    </header>
+
+
+  
+    <form action="" class="form-container" id="form-id-there">
+        <div class="field-box">
+            <input type="text" placeholder="Name*" minlength='2' maxlength='50' class="form-input" required>
+        </div>
+        <input type="email" placeholder="Email*" class="form-input" required>
+        <input type="tel" placeholder="Phone*" pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="38-050-050-55-55" class="form-input" required>
+        <input type="password" placeholder="Password" class="form-input">
+        <input type="number" min="5" max="10" step="2" placeholder="Name" class="form-input" disabled>
+        <textarea class="form-input message"></textarea>
+        <fieldset>
+            <legend>Select your hobby</legend>
+            <label for="football">Football</label>
+            <input type="checkbox" name="checkbox-name" id="football">
+            <label for="soccer">soccer</label>
+            <input type="checkbox" name="checkbox-name"id="soccer">
+            <label for="valleybal">valleybal</label>
+            <input type="checkbox" name="checkbox-name"id="valleybal">
+        </fieldset>
+
+        <fieldset>
+            <legend>Select your hobby</legend>
+            <input type="radio" name="radio-name">
+            <input type="radio" name="radio-name">
+            <input type="radio" name="radio-name">
+        </fieldset>
+
+        <select>
+            <option name=''>Kiev</option>
+            <option name=''>Kharkov</option>
+            <option name=''>Odessa</option>            <option name=''>Kiev</option>
+            <option name=''>Kharkov</option>
+        </select>
+
+        <input class="form-input" type="reset">
+        <input class="form-input" type="range">
+        <input class="form-input" type="date">
+        <input class="form-input" type="datetime-local">
+        <input class="form-input" type="color">
+
+
+        <label for="file-form-id" class="file-label">
+            <input class="form-input file-input" type="file" id="file-form-id" accept="images/*">
+        </label>
+
+        <button class="form-submit" type="submit">Submit</button>
+    </form>
+
+
+
+
+   
+
+</body>
+</html>
