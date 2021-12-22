@@ -13,4 +13,16 @@ jQuery(document).ready(function() {
         $('html, body').animate({scrollTop: ($(this.hash).offset().top) - 110}, 500);
     });
 
+
+    // Call modal window
+    $('.modal-link').click(() => {
+        $('.modal-container').fadeIn()
+    });
+
+    
+    // Close modal window
+    $('.close-modal').click(() => {
+        $('.modal-container').fadeOut()
+    });
+
 });

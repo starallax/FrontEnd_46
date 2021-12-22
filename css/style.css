@@ -130,7 +130,7 @@ a{
     letter-spacing: 0.09em;
     text-transform: uppercase;
     color: #FFFFFF;
-    transition: 1s linear color, 1s linear background;
+    transition: .3s linear color, .3s linear background;
   
 }
 
@@ -167,8 +167,8 @@ a{
 
 .navbar-fixed{
     background: rgba(0, 0, 0, .5);
-    backdrop-filter: blur(15px);
 }
+
 .navbar-fixed .logo-img{
     transition: .3s linear fill;
     fill: #fff;
@@ -306,6 +306,15 @@ a{
     
     color: var(--text-secondary-lighter);
 }
+
+
+.modal-container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.459);
+    display: none;
+}
+
 
 /* =========== Header styles ends here =========== */
 
@@ -612,6 +621,8 @@ a{
     letter-spacing: 0.02em;
     font-style: normal;
     margin-bottom: 70px;
+    padding-left: 30px;
+    position: relative;
 
     color: var(--text-secondary-lighter);
 }
@@ -620,23 +631,26 @@ a{
 .contact-link::before,
 .adress-box::before{
     content: '';
-    display: inline-block;
+    position: absolute;
     width: 24px;
     height: 24px;
     margin-right: 16px;
-    background-image: url(../images/icons/phone.svg);
+    left: 0;
+    top: 4px;
+    background-image: url(../images/icons/map-pin.svg);
 }
 
 .mail::before{
     background-image: url(../images/icons/mail.svg);
 }
-.adress-box::before{
-    background-image: url(../images/icons/map-pin.svg);
+.phone::before{
+    background-image: url(../images/icons/phone.svg);
 }
 .contact-link{
     display: block;
     color: inherit;
     margin-top: 20px;
+    position: relative;
 }
 
 .contact-link.mail{
@@ -646,6 +660,7 @@ a{
 .contact-link.phone:before,
 .contact-link.mail:before{
     content: '';
+    left: -30px;
 }
 
 .schedule-box{
