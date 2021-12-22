@@ -33,7 +33,7 @@
 
             <div class="link-box">
                 <a href="tel:+380441111111" class="link-box-phone">+38 044 111 11 11</a>
-                <a href="#footer" class="primary-link">онлайн-запись</a>
+                <button type="button" class="primary-link modal-link">онлайн-запись</button>
             </div>
 
         </div>
@@ -51,9 +51,47 @@
         </div>
 
 
-        <div class="modal-container">
+        <div class="modal-container ">
             <div class="modal-box">
+                <button type="button" class="modal-cross close-modal">&#xd7;</button>
+                <b class="modal-headline">Оставьте свои данные, мы вам перезвоним</b>
+                <form class="modal-form">
+                    <label class="form-input-box">
+                        Имя
+                        <input type="text" name="user-name" class="form-input" required>
+                        <svg class="form-input-icon">
+                            <use href='./images/icons/sprite.svg#person-ico'></use>
+                        </svg>
+                    </label>                    
+                    <label class="form-input-box">
+                        Телефон
+                        <input type="tel" name="" class="form-input" pattern="[0-9]{10}" title="0500505050" required>
+                        <svg class="form-input-icon">
+                            <use href='./images/icons/sprite.svg#phone-ico'></use>
+                        </svg>
+                    </label>                    
+                    <label class="form-input-box">
+                        Почта
+                        <input type="email" name="" class="form-input">
+                        <svg class="form-input-icon">
+                            <use href='./images/icons/sprite.svg#mail-ico'></use>
+                        </svg>
+                    </label>
 
+                    <div class="message-box">
+                        <textarea name="user-msg" class="form-message" placeholder=" "></textarea>
+                        <label class="textarea-label">
+                            Комментарий
+                        </label>
+                    </div>
+
+                    <input type="checkbox" class="policy-checkbox" id="policy-check"> 
+                    <label class="policy-box" for="policy-check">
+                        Соглашаюсь с рассылкой и принимаю &nbsp;<a href="#">Условия договора</a>
+                    </label>
+
+                    <button type="submit" class="form-submit-btn">Отправить</button>
+                </form>
             </div>
         </div>
 

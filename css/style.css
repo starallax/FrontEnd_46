@@ -127,6 +127,8 @@ a{
     font-weight: 600;
     font-size: 12px;
     line-height: 1.3;
+    background-color: transparent;
+    cursor: pointer;
     letter-spacing: 0.09em;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -163,10 +165,13 @@ a{
     padding: 0 55px;
     position: fixed;
     transition: .3s linear background;
+    z-index: 95;
+
 }
 
 .navbar-fixed{
     background: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(15px);
 }
 
 .navbar-fixed .logo-img{
@@ -309,12 +314,198 @@ a{
 
 
 .modal-container{
+    position: fixed;
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.459);
-    display: none;
+    backdrop-filter: blur(15px);
+    z-index: 100;
 }
 
+.modal-box{
+    width: 530px;
+    min-height: 580px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-cross{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid gray;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    font-size: 1.5em;
+    line-height: 2em;
+    transition: .3s linear color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-cross:hover{
+    color: #2196F3;
+}
+
+.modal-headline{
+    font-size: 19px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+.modal-form{
+    margin-top: 12px;
+}
+.form-input-box{
+    display: block;
+    margin-bottom: 20px;
+    color: #757575;
+    font-size: 12px;
+    position: relative;
+}
+
+.textarea-label{
+    display: block;
+    color: #757575;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    transform: translate(10px, 14px);
+    transition: .1s linear transform;
+}
+
+.message-box{
+    position: relative;
+    margin: 30px 0;
+}
+
+.form-message:focus + .textarea-label{
+    transform: translate(0px, -15px)
+}
+
+/* .form-message:not() + .textarea-label{
+    transform: translate(0px, -15px)
+} */
+
+.form-input, .form-message{
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+    padding: 0 10px 0 35px;
+    transition: .3s linear border;
+}
+
+.form-input:focus{
+    outline: none;
+    border: 1px solid #2196F3;
+}
+
+.form-input:focus + .form-input-icon{
+    fill: #2196F3;
+}
+
+.form-message{
+    font-family: inherit;
+    resize: none;
+    height: 120px;
+    padding: 12px 16px;
+}
+
+.form-message::placeholder{
+    color: #bababa;
+}
+
+.form-input-icon{
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transition: .3s linear fill;
+}
+
+.policy-box{
+    font-size: 14px;
+    color:  #757575;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+
+.policy-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+
+.policy-checkbox:checked + .policy-box::before{
+    background-color: #2196F3;
+    background-image: url(../images/icons/checkbox-tip.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.policy-checkbox:focus + .policy-box::before{
+    border-color: #2196F3;
+    outline: 2px solid #2196F3;
+}
+
+.policy-box::before{
+    display: block;
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 1px solid #212121;
+    border-radius: 2px;
+    margin-right: 10px;
+
+}
+
+.policy-box a{
+    color: #2196F3;
+    text-decoration: underline;
+}
+
+.form-submit-btn{
+    width: 200px;
+    height: 50px;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s linear box-shadow, .3s linear background-color;
+}
+
+.form-submit-btn:hover{
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
 /* =========== Header styles ends here =========== */
 
