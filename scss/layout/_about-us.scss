@@ -1,0 +1,8 @@
+.about-image{
+    display: inline-block;
+    width: calc(50% - 15px);
+}
+
+.about-image:not(:last-child){
+    margin-right: 25px;
+}

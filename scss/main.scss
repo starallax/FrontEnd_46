@@ -1,0 +1,19 @@
+// Variables
+@import './utils/normalize.scss';
+@import './utils/vars.scss';
+
+// Base styles
+@import './base/reset.scss';
+@import './base/base-styles.scss';
+
+// Components
+@import './components/button';
+
+// Layout
+@import './layout/header';
+@import './layout/about-us';
+@import './layout/why-us';
+@import './layout/price';
+@import './layout/masters';
+@import './layout/gallery';
+@import './layout/footer';

@@ -1,0 +1,24 @@
+.primary-link{
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 1px solid var(--theme-color);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.3;
+    background-color: transparent;
+    cursor: pointer;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: .3s linear color, .3s linear background;
+  
+}
+
+.primary-link.darken{
+    color: var(--text-primary);
+}
+
+.primary-link:hover{
+    color: #fff;
+    background-color: var(--theme-color);
+}
