@@ -79,7 +79,7 @@
                     </label>
 
                     <div class="message-box">
-                        <textarea name="user-msg" class="form-message" placeholder=" "></textarea>
+                        <textarea name="user-msg" class="form-message" placeholder="&nbsp;"></textarea>
                         <label class="textarea-label">
                             Комментарий
                         </label>
@@ -145,7 +145,7 @@
                 </ul>
     
                 <div class="link-box">
-                    <a href="#footer" class="primary-link">онлайн-запись</a>
+                    <a href="#footer" class="primary-link easy-scroll">онлайн-запись</a>
                 </div>
             </div>
         </section> 
@@ -300,6 +300,16 @@
         <div class="footer-box">
             <form class="footer-form">
                 <h3 class="section-title lighten">онлайн-запись</h4>
+                <div class="footer-input-box">
+                    <input type="text" class="footer-form-input" placeholder='&nbsp;' id="footer-name-input" name="user-name" required>
+                    <label for="footer-name-input" class="footer-input-label" >Имя*</label>
+                </div>
+                <div class="footer-input-box">
+                    <input type="tel" class="footer-form-input" placeholder='&nbsp;' id="footer-phone-input" name="user-phone" required>
+                    <label for="footer-phone-input" class="footer-input-label" >Телефон*</label>
+                </div>
+                <textarea name="" class="footer-form-text" placeholder="сообщение"></textarea>
+                <button type="submit" class="primary-link">Отправить</button>
             </form>
             <section class="footer-contacts">
                 <h3 class="section-title lighten">контакты</h4>
