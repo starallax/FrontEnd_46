@@ -1,0 +1,77 @@
+// Here located box styles and their settings
+
+// Wrappers
+@mixin custom-box($w, $h, $bg-color, $radius, $shadow, $padding, $margin) {
+	width: $w;
+	height: $h;
+	background-color: $bg-color;
+	padding: $padding;
+	margin: $margin;
+	border-radius: $radius;
+}
+
+@mixin fullwidth-box($bg-color, $margin-X, $radius) { // Box with 100% width
+	background-color: $bg-color;
+	width: calc(100% - (#{$margin-X} * 2));
+	margin-left: $margin-X;
+	margin-right: $margin-X;
+	height: auto;
+	border-radius: $radius;
+	box-sizing: border-box;
+}
+
+@mixin fullscreen-box { // Fullscreen box, horizontally and vertically
+	width: 100%;
+	height: calc(100vh - #{$footer-height});
+}
+
+// Modal boxes
+@mixin custom-modal-box($min-w, $min-h, $radius) { // Custom modal
+	min-width: $min-w;
+	min-height: $min-h;
+	width: auto;
+	height: auto;
+	box-sizing: border-box;
+	border-radius: $radius;
+	border: none;
+}
+
+@mixin modal-text-box { // Mixin for modal with text content
+	min-width: 600px;
+	min-height: 280px;
+	width: auto;
+	height: auto;
+	box-sizing: border-box;
+	border: none;
+	border-radius: 16px;
+}
+
+// Inputs
+@mixin custom-input($width, $margin){
+	width: $width;
+	height: 50px;
+	position: relative;
+	margin: $margin;
+	input{
+		width: 100%;
+		border: 1px solid $border-light;
+		border-radius: $radius-s;
+		max-height: 50px;
+		padding: 15px;
+		@include text-normal($font-color);
+	}
+}
+
+// Borders | Shadows | Outline
+@mixin border-light{
+	border: 1px solid $border-light;
+}
+
+@mixin with-border($border-size, $border-color) { // Custom border
+	border: $border-size solid $border-color
+}
+
+@mixin non-focused { // Off focus
+	outline: none;
+	box-shadow: none;
+}

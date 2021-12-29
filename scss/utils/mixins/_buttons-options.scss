@@ -1,0 +1,99 @@
+// Here located buttons styles and their settings
+
+
+@mixin custom-btn_fixed-size($btn-w, $btn-h, $btn-bg, $btn-text-color, $btn-text-size, $btn-radius, $shadow) { // Custom button with fixed size (example: 200px/50px)
+	width: $btn-w;
+	height: $btn-h;
+	background: $btn-bg;
+	border-radius: $btn-radius;
+	box-sizing: border-box;
+	box-shadow: $shadow;
+	color: $btn-text-color;
+	cursor: pointer;
+	transition: .3s linear all;
+}
+
+@mixin custom-btn_auto-size($padding-Y, $padding-r, $padding-l, $btn-bg, $btn-text-color, $btn-text-size, $btn-radius, $shadow) { // Custom button with auto size. The size is adjusted depending on the content.
+	padding-top: $padding-Y;
+	padding-bottom: $padding-Y;
+	padding-right: $padding-r;
+	padding-left: $padding-l;
+	background: $btn-bg;
+	border-radius: $btn-radius;
+	box-sizing: border-box;
+	box-shadow: $shadow;
+	color: $btn-text-color;
+	cursor: pointer;
+	transition: .3s linear all;
+}
+
+@mixin btn-square($btn-w, $btn-bg) { // Square buttom, with height = width (example: 48px/48px)
+	min-width: $btn-w;
+	min-height: $btn-w;
+	width: $btn-w;
+	height: $btn-w;
+	background: $btn-bg;
+	border-radius: 12px;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: .3s linear all;
+}
+
+@mixin btn-rounded($btn-w, $btn-bg) { // Rounded button with radial border.
+	width: $btn-w;
+	height: $btn-w;
+	background: $btn-bg;
+	border-radius: 50%;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: .3s linear all;
+}
+
+@mixin btn-fixed-size_sm($btn-bg, $btn-text-color, $shadow) { // Fixed size button. Used in modals, submits and tables.
+	display: block;
+	width: 145px;
+	height: 55px;
+	color: $btn-text-color;
+	vertical-align: middle;
+	text-align: center;
+	border-radius: 8px;
+	background: $btn-bg;
+	box-sizing: border-box;
+	box-shadow: $shadow;
+	cursor: pointer;
+	transition: .3s linear all;
+	white-space: nowrap;
+}
+
+@mixin btn-auto-size_xl($btn-bg, $btn-text-color, $shadow) { // Big button. The size is adjusted depending on the content.
+	padding: 18px 40px 18px 40px;
+	background: $btn-bg;
+	color: $btn-text-color;
+	border-radius: 8px;
+	box-sizing: border-box;
+	box-shadow: $shadow;
+	cursor: pointer;
+	transition: .3s linear all;
+}
+
+@mixin btn-auto-size_sm($btn-bg, $btn-text-color, $shadow) { // Medium button. The size is adjusted depending on the content.
+	padding: 16px 32px 16px 32px;
+	background: $btn-bg;
+	color: $btn-text-color;
+	border-radius: 8px;
+	box-sizing: border-box;
+	box-shadow: $shadow;
+	cursor: pointer;
+	transition: .3s linear all;
+}
+
+@mixin btn-auto-size_xs($btn-bg, $btn-text-color, $shadow) { // Small button. The size is adjusted depending on the content.
+	padding: 10px 30px 10px 30px;
+	background: $btn-bg;
+	color: $btn-text-color;
+	border-radius: 8px;
+	box-sizing: border-box;
+	box-shadow: $shadow;
+	cursor: pointer;
+	transition: .3s linear all;
+}

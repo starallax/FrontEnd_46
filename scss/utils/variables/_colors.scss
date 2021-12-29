@@ -1,0 +1,45 @@
+// Variables of color values, and the components where they are indicated, located here
+
+$primary-color		    	     : #FF792E; // Main color. Used in most conponents and elements.
+$primary-color-contrast	         : #ED5500; // Hover effect on buttons
+
+// Event colors
+$danger-color                    : #EB5757; // Delete button, Negative numbers in analytics
+$danger-color-contrast	         : #DC4938; // Hover effect
+$danger-color-light		 	     : #FF7171; // Field outline on error
+$success-color                   : #219653; // Positive numbers in analytics
+
+// Text colors
+$font-color						 : #1F1F1F; // Headers, icons
+$font-color-light				 : #575757; // Text, icons
+$font-color-neutral			     : #7F8392; // Table thumb bg, Paginator arrows, Neutral text.
+$link-color						 : #3AA1FF;
+
+// Button colors
+$event-btn-bg			 		 : #DEE1EA; // Apply button, Browse files button, Paginator prev page,
+$event-btn-bg-light		 	     : #F3F5F6; // Delete table item button
+$event-btn-bg-lighten	 	     : #F5F6F9; // Cancel button, Back button
+
+// Border colors
+$border-light			 		 : #DEE1EA; // Navbar, Search field, Selects, etc.
+$border-neutral			 		 : #F2F2F2; // Table item border
+$border-dark			 	     : #1F1F1F; // Checkboxes
+
+// Components individual colors
+$completed-stages-color	         : #232323; // Stages dots & text
+$footer-bg-color		 		 : #25282c; // Footer bg
+$body-bg-color 			 		 : #F5F6F9; // Body Bg
+$table-header-bg		 		 : #F3F5F6; // Table header bg
+$modal-header-color		 	     : #DFF2FB; // Modal header bg
+$scroll-bg-color 		 		 : #C7C7C7; // Scroll track color
+$scroll-color	 		 	     : #4597E1; // Scroll thumb color
+
+// Analytics colors
+$analytics-first		 		 : #517E9E;
+$analytics-second		 		 : #5891BC;
+$analytics-third		 		 : #5EA3D9;
+$analytics-fourth		 		 : #64B5F6;
+
+
+
+

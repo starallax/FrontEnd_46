@@ -1,0 +1,31 @@
+// Here located box & content alignment styles and their settings
+
+@mixin custom-flex-container($justify, $align, $direction, $wrap){ // You can write own flex styles
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+	flex-direction: $direction;
+	flex-wrap: $wrap;
+}
+
+@mixin centered-X-content{ // Box with centered content horizontally
+	display: flex;
+	justify-content: center;
+}
+
+@mixin centered-Y-content{ // Box with centered content vertically
+	display: flex;
+	align-items: center;
+}
+
+@mixin centered-content{ // Box with centered content horizontally and vertically
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin centered-text{ // Box with centered text horizontally and vertically
+	text-align: center;
+	line-height: 100%;
+	vertical-align: middle;
+}

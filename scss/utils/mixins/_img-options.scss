@@ -1,0 +1,61 @@
+// Here located images styles and their settings
+
+
+@mixin custom-bg($bg_url, $bg_size, $bg-color, $bg-repeat, $bg-position) { // You can write own styles for background
+    background-image: url($bg_url);
+    background-repeat: $bg-repeat;
+    background-attachment: inherit;
+    background-size: $bg_size;
+    background-color: $bg-color;
+    background-position: $bg-position;
+}
+
+@mixin bg-contain($bg_url, $bg-color, $bg-position) { // Background contain styles
+    background-image: url($bg_url);
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-position: $bg-position;
+    background-color: $bg-color;
+    background-size: contain;
+}
+
+@mixin bg-cover($bg_url, $bg-color, $bg-position) { // Background cover styles
+    background-image: url($bg_url);
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-position: $bg-position;
+    background-color: $bg-color;
+    background-size: cover;
+}
+
+@mixin custom-img($obj-fit, $min-width, $min-height) { // You can write own styles for images
+    min-width: $min-width;
+    min-height: $min-height;
+    object-fit: $obj-fit;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin square-img($img-w) { // Square image with height = width
+    width: $img-w;
+    height: $img-w;
+    border-radius: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin img-contain { // Contain image
+    object-fit: contain;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin img-cover { // Cover image
+    object-fit: cover;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+

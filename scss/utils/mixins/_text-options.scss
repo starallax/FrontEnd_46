@@ -1,0 +1,50 @@
+// Here located mixins for text styles (size, weight, line-height, color, align)
+
+
+@mixin custom-text($f-size, $f-weight, $line-h, $color, $align ) { // Custom text options.
+	font-size: $f-size;
+	font-weight: $f-weight;
+	line-height: $lin1e-height;
+	color: $color;
+	text-align: $align;
+}
+
+@mixin text-s($color) { // Small text
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	color: $color;
+	text-align: left;
+}
+
+@mixin text-normal($color) { // Normal text
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+	color: $color;
+	text-align: left;
+}
+
+@mixin text-sm($f-weight, $color) { // Bigger that normal text, can be Heading
+	font-size: $text-sm; // 24px
+	font-weight: $f-weight;
+	line-height: 28px;
+	color: $color;
+	text-align: left;
+}
+
+@mixin text-md($f-weight, $color) { // Medium text, mainly for headers
+	font-size: $text-md; // 36px
+	font-weight: $f-weight;
+	line-height: 42px;
+	color: $color;
+	text-align: left;
+}
+
+@mixin text-xl($f-weight, $color) { // Large text for headers
+	font-size: $text-xl; // 48px
+	font-weight: $f-weight;
+	line-height: 56px;
+	color: $color;
+	text-align: left;
+}

@@ -11,14 +11,11 @@
     text-transform: uppercase;
     color: #FFFFFF;
     transition: .3s linear color, .3s linear background;
-  
-}
-
-.primary-link.darken{
-    color: var(--text-primary);
-}
-
-.primary-link:hover{
-    color: #fff;
-    background-color: var(--theme-color);
+    &_darken{
+        color: var(--text-primary);
+    }
+    &:hover{
+        color: #fff;
+        background-color: var(--theme-color);
+    }
 }
