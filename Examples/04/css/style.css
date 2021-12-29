@@ -1,5 +1,7 @@
 p {
-    text-align: justify;
+    text-align: left;
+    padding-right: 50%;
+    white-space: pre-wrap;
 }
 
 input{

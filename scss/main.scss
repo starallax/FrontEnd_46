@@ -1,13 +1,14 @@
 // Variables
-@import './utils/normalize.scss';
-@import './utils/vars.scss';
+@import './utils/normalize';
+@import './utils/vars';
 
 // Base styles
-@import './base/reset.scss';
-@import './base/base-styles.scss';
+@import './base/reset';
+@import './base/base-styles';
 
 // Components
 @import './components/button';
+@import './components/modal';
 
 // Layout
 @import './layout/header';
