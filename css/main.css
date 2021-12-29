@@ -485,6 +485,21 @@ a {
   border-radius: 2px;
   margin-right: 10px;
 }
+.modal-form__checkbox:focus + .modal-form__policy-box::before {
+  border-color: #2196F3;
+  outline: 2px solid #2196F3;
+}
+.modal-form__checkbox:checked + .modal-form__policy-box::before {
+  background-color: #2196F3;
+  background-image: url(../images/icons/checkbox-tip.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.modal-form__policy-box a {
+  color: #2196F3;
+  text-decoration: underline;
+}
 .modal-form__submit-btn {
   margin: 0 auto;
 }
@@ -513,35 +528,25 @@ a {
   fill: #2196F3;
 }
 
-.form-message:focus + .textarea-label {
+.modal-form__textarea:focus + .modal-form__textarea-label {
   -webkit-transform: translate(0px, -15px);
       -ms-transform: translate(0px, -15px);
           transform: translate(0px, -15px);
 }
 
-.form-message:not(:-moz-placeholder-shown) + .textarea-label {
+.modal-form__textarea:not(:-moz-placeholder-shown) + .modal-form__textarea-label {
   transform: translate(0px, -15px);
 }
 
-.form-message:not(:-ms-input-placeholder) + .textarea-label {
+.modal-form__textarea:not(:-ms-input-placeholder) + .modal-form__textarea-label {
   -ms-transform: translate(0px, -15px);
       transform: translate(0px, -15px);
 }
 
-.form-message:not(:placeholder-shown) + .textarea-label {
+.modal-form__textarea:not(:placeholder-shown) + .modal-form__textarea-label {
   -webkit-transform: translate(0px, -15px);
       -ms-transform: translate(0px, -15px);
           transform: translate(0px, -15px);
-}
-
-.policy-checkbox:focus + .policy-box::before {
-  border-color: #2196F3;
-  outline: 2px solid #2196F3;
-}
-
-.policy-box a {
-  color: #2196F3;
-  text-decoration: underline;
 }
 
 .header {
