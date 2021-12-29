@@ -18,6 +18,14 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    &__headline{
+        font-size: 19px;
+        line-height: 1.1;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        color: #212121;
+    }
 }
 
 .modal-cross{
@@ -29,6 +37,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 1.5em;
     transition: .3s linear color;
 
@@ -42,16 +51,6 @@
         right: 8px;
     }
 }
-
-.modal__headline{
-    font-size: 19px;
-    line-height: 1.1;
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: #212121;
-}
-
 
 .modal-form{
     padding-top: 12px;
@@ -160,7 +159,7 @@
             text-decoration: underline;
         }        
     }
-    &__submit-btn{
+    &__submit{
         margin: 0 auto;
     }
 }
