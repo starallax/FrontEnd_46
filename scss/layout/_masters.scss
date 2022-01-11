@@ -3,14 +3,31 @@
 }
 
 .masters-list{
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include respond-to(mobile){
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    @include respond-to(desktop){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
 }
 
 .master-card{
     text-align: center;
+
+    @media screen and (min-width: 320px){
+        margin-bottom: 65px;
+    }
+
+    @media screen and (min-width: 1366px) {
+        margin-bottom: 0px;
+    }
 }
 
 .master-avatar{

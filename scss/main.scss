@@ -1,5 +1,7 @@
 // Variables
 @import './utils/normalize';
+@import './utils/variables/breakpoints';
+@import './utils/mixins/respond';
 @import './utils/vars';
 
 // Base styles
@@ -18,3 +20,10 @@
 @import './layout/masters';
 @import './layout/gallery';
 @import './layout/footer';
+
+
+@media print {
+    .navbar{
+        display: none;
+    }
+}

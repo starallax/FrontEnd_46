@@ -3,14 +3,52 @@
 }
 
 .footer-box{
-    display: flex;
+    @include respond-to(mobile){
+        display: flex;
+        flex-direction: column;
+    }
+    @include respond-to(desktop){
+        flex-direction: row;
+    }
 }
 
 .footer-form{
-    width: 50%;
-    max-width: 970px;
-    padding: 130px 40px 130px 55px;
-    margin-left: auto;
+
+
+    @include respond-to(mobile){
+        width: 100%;
+        padding: 100px 40px;
+        display: flex;
+        flex-direction: column;
+
+        .primary-link{
+            align-self: center;
+        }
+    }
+
+    @include respond-to(tablet){
+        display: block;
+    }
+    @include respond-to(desktop){
+        width: 50%;
+        max-width: 970px;
+        padding: 130px 40px 130px 55px;
+        margin-left: auto;
+
+    }
+
+    .footer-input-box{
+        @include respond-to(mobile){
+            position: relative;
+            width: 100%;
+            margin-bottom: 80px;
+        }
+        @include respond-to(tablet){
+            display: inline-block;
+            width: calc(50% - 15px);
+        }
+    }
+    
 }
 
 .footer-form > .section-title{
@@ -21,11 +59,6 @@
     padding: 12px 38px;
 }
 
-.footer-input-box{
-    position: relative;
-    display: inline-block;
-    width: calc(50% - 15px);
-}
 
 .footer-input-box:nth-of-type(odd){
     margin-right: 25px;
@@ -95,11 +128,19 @@
 }
 
 .footer-contacts{
-    width: 50%;
-    padding: 130px 0 130px 100px;
-    background-image: url(../images/footer/footer-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    
+    @include respond-to(mobile){
+        width: 100%;
+        background-image: url(../images/footer/footer-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 40px;
+    }
+    @include respond-to(desktop){
+        width: 50%;
+        padding: 130px 0 130px 100px;
+
+    }
 }
 
 .adress-box{

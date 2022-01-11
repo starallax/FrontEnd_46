@@ -42,7 +42,6 @@ ul,ol{
     margin: 0 auto;
     min-height: 50vh;
     border: 2px solid red;
-    position: relative;
 }
 
 .box{
@@ -58,17 +57,16 @@ ul,ol{
 .relative-box{
     background-color: rgb(226, 101, 101);
     position: relative;
-    top: 10px;
-    left: 10px;
+    bottom: -700px;
+    z-index: 1;
 }
 
 
 .absolute-box{
     background-color: rgb(104, 216, 94);
     position: absolute;
-    top: 0;
-    left: 50%;
-    top: 50%;
+    bottom: 0;
+    left: 0;
     /* margin-top: -50px;
     margin-left: -50px; */
 
@@ -77,16 +75,17 @@ ul,ol{
 
 .fixed-box{
     background-color: rgb(226, 180, 53);
-    /* position: fixed;
-    top: 0;
-    left: 0; */
+    position: fixed;
+    right: 0;
+    bottom: 0;
 
 }
 
 
 .sticky-box{
-    position: sticky;
-    top: 0px;
+    position: sticky;  
+    bottom: 0;  
+    left: 0;
 }
 
 
@@ -107,9 +106,6 @@ ul,ol{
     background-color: rgba(135, 207, 235, 0.705);
     display: flex;
     justify-content: space-around;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 .infobox{
     width: 100%;
@@ -147,7 +143,6 @@ ul,ol{
     top: 20px;
     color: #000;
     border: 2px solid;
-    position: sticky;
     top: 50px;
 }
 
@@ -167,7 +162,6 @@ ul,ol{
     width: 200px;
     height: 200px;
     margin-right: 20px;
-    position: relative;
     z-index: 10;
     bottom: -80px;
     background-color: rgba(0, 255, 0, 0.89);
@@ -175,8 +169,6 @@ ul,ol{
 
 .right-box{
     width: 200px;
-    position: relative;
-    z-index:11;
     background-color: rgba(255, 0, 0, 0.493);
 }
 
@@ -184,15 +176,12 @@ ul,ol{
     width: 100px;
     height: 100px;
     color: #000;
-    position: relative;
 }
 
 .index-box:nth-child(1){
     background-color: skyblue;
-    position: relative;
     bottom: -40px;
-    z-index: 99999999;
-}
+                                                                  }
 
 .index-box:nth-child(2){
     background-color: teal;
@@ -229,17 +218,14 @@ ul,ol{
     /* transform: translate(x, y);     */
     /* translateX(0)
     translateY(0) */
-    transform: translate(0, 0);
 
 }
 
 .transform-box.rotate{
-    transform: rotate(10deg);
     background-color: rgb(104, 216, 94);
 }
 
 .transform-box.scale{
-    transform: scale(0.1);
     background-color: rgb(196, 125, 67);
 }
 
@@ -249,7 +235,6 @@ ul,ol{
 
 .transform-box.skew{
     /* transform: skew(x, y); */
-    transform: skew(10deg, 10deg);
     background-color: rgb(194, 64, 64);
 }
 
@@ -265,20 +250,12 @@ ul,ol{
     justify-content: center;
 }
 
-.link{
-    color: #fff;
-    padding: 15px;
-    border-radius: 15px;
-    border: 1px solid skyblue;
-    background-color: rgb(54, 151, 189);
 /* 
     transition-duration: .3s;
     transition-property: background-color;
     transition-timing-function: linear;
     transition-delay: .2s; */
 
-    transition: linear background-color .3s;
-}
 
 .link:hover{
     border: 1px solid rgb(34, 64, 77);

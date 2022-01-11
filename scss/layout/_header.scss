@@ -27,8 +27,17 @@
         height: 54px;
         margin-right: 70px;
     }
+
 }
 
+@media print{
+    .header {
+      display: none;
+    }
+    .primary-link{
+        display: none;
+    }
+}
 
 .sidebar{
     width: 155px;

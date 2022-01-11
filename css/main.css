@@ -133,10 +133,17 @@ a {
   padding: 130px 40px;
 }
 
-.section-wrapper {
-  width: 1440px;
-  padding: 0 15px;
-  margin: 0 auto;
+@media screen and (min-width: 320px) {
+  .section-wrapper {
+    width: auto;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .section-wrapper {
+    width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
 }
 
 .flexible-wrapper {
@@ -595,6 +602,15 @@ a {
   margin-right: 70px;
 }
 
+@media print {
+  .header {
+    display: none;
+  }
+
+  .primary-link {
+    display: none;
+  }
+}
 .sidebar {
   width: 155px;
   background-color: #fff;
@@ -837,20 +853,47 @@ a {
   background-color: var(--section-color);
 }
 
-.masters-list {
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 319px) {
+  .masters-list {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .masters-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .master-card {
   text-align: center;
+}
+@media screen and (min-width: 320px) {
+  .master-card {
+    margin-bottom: 65px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .master-card {
+    margin-bottom: 0px;
+  }
 }
 
 .master-avatar {
@@ -922,18 +965,55 @@ a {
   transition: 0.3s linear fill;
 }
 
-.gallery-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 40px;
+@media screen and (min-width: 319px) {
+  .gallery-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 767px) {
+  .gallery-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gallery-list {
+    margin-top: 40px;
+  }
 }
 
-.gallery-item {
-  width: calc(25% - 30px);
+@media screen and (min-width: 319px) {
+  .gallery-item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .gallery-item {
+    width: calc(50% - 15px);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gallery-item {
+    width: calc(25% - 30px);
+    margin-bottom: 0;
+  }
 }
 
 .gallery-image {
@@ -944,17 +1024,68 @@ a {
   background-color: #191C26;
 }
 
-.footer-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 319px) {
+  .footer-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
-.footer-form {
-  width: 50%;
-  max-width: 970px;
-  padding: 130px 40px 130px 55px;
-  margin-left: auto;
+@media screen and (min-width: 319px) {
+  .footer-form {
+    width: 100%;
+    padding: 100px 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-form .primary-link {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+}
+@media screen and (min-width: 767px) {
+  .footer-form {
+    display: block;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer-form {
+    width: 50%;
+    max-width: 970px;
+    padding: 130px 40px 130px 55px;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 319px) {
+  .footer-form .footer-input-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .footer-form .footer-input-box {
+    display: inline-block;
+    width: calc(50% - 15px);
+  }
 }
 
 .footer-form > .section-title {
@@ -963,12 +1094,6 @@ a {
 
 .footer-form > .primary-link {
   padding: 12px 38px;
-}
-
-.footer-input-box {
-  position: relative;
-  display: inline-block;
-  width: calc(50% - 15px);
 }
 
 .footer-input-box:nth-of-type(odd) {
@@ -1079,12 +1204,20 @@ a {
   border-color: #fff;
 }
 
-.footer-contacts {
-  width: 50%;
-  padding: 130px 0 130px 100px;
-  background-image: url(../images/footer/footer-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+@media screen and (min-width: 319px) {
+  .footer-contacts {
+    width: 100%;
+    background-image: url(../images/footer/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer-contacts {
+    width: 50%;
+    padding: 130px 0 130px 100px;
+  }
 }
 
 .adress-box {
@@ -1189,4 +1322,10 @@ a {
           justify-content: space-between;
   padding: 0 55px;
   background-color: #fff;
+}
+
+@media print {
+  .navbar {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
