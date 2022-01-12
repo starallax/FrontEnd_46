@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+}
+header{
+    text-align: center;
+    background-color: skyblue;
+    padding: 30px 0;
+}
+
+section, footer{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    background-color: #00a6ff;
+    margin-top: 50px;
+    border-bottom: 5px dashed #000;
+}
+
+
+/* 
+96dpi - 1x
+115dpi - 1.2x
+144dpi - 1.5x
+192dpi - 2x
+288dpi - 3x
+384dpi - 4x 
+*/

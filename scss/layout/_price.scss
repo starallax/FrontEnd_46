@@ -4,6 +4,9 @@
     background-image: url(../images/price/price-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image:   url(../images/price/price-bg@2x.png);
+    }
 }
 
 .price-list{

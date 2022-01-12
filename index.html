@@ -284,10 +284,41 @@
                 <h2 class="section-suptitle">На латинском языке “барба” означает “борода”</h2>
                 <h3 class="section-title" hidden >Галерея</h3>
                 <ul class="gallery-list">
-                    <li class="gallery-item"><img src="./images/gallery/gallery-1.jpg" class="gallery-image" alt="Безопасно подстригаем"></li>
-                    <li class="gallery-item"><img src="./images/gallery/gallery-2.jpg" class="gallery-image" alt="Мажем пенкой"></li>
-                    <li class="gallery-item"><img src="./images/gallery/gallery-3.jpg" class="gallery-image" alt="Успокаиваем буйных клиентов"></li>
-                    <li class="gallery-item"><img src="./images/gallery/gallery-4.jpg" class="gallery-image" alt="Опасно подстригаем"></li>
+                    <li class="gallery-item">
+                        <picture>
+                            <source media='(min-width: 1920px)' srcset="./images/gallery/gallery-1.jpg 1x, ./images/gallery/gallery-1-mobile@2x.jpg 2x">
+                            <source media='(min-width: 768px)' srcset="./images/gallery/gallery-1-tablet.jpg 1x, ./images/gallery/gallery-1-tablet@2x.jpg 2x">
+                            <source media='(min-width: 320px)' srcset="./images/gallery/gallery-1-mobile.jpg 1x, ./images/gallery/gallery-1@2x.jpg 2x">
+                            <img src="./images/gallery/gallery-1.jpg" class="gallery-image" alt="Безопасно подстригаем">
+                        </picture>
+                        <!-- <picture>
+                            <source media='(min-width: 1920px)' srcset="./images/gallery/gallery-1.webp 1x, ./images/gallery/gallery-1-mobile@2x.webp 2x" type="image/webp">
+                            <source media='(min-width: 1920px)' srcset="./images/gallery/gallery-1.jpg 1x, ./images/gallery/gallery-1-mobile@2x.jpg 2x">
+                            <source media='(min-width: 768px)' srcset="./images/gallery/gallery-1-tablet.jpg 1x, ./images/gallery/gallery-1-tablet@2x.jpg 2x" type="image/webp">
+                            <source media='(min-width: 768px)' srcset="./images/gallery/gallery-1-tablet.jpg 1x, ./images/gallery/gallery-1-tablet@2x.jpg 2x">
+                            <source media='(min-width: 320px)' srcset="./images/gallery/gallery-1-mobile.jpg 1x, ./images/gallery/gallery-1@2x.jpg 2x" type="image/webp">
+                            <source media='(min-width: 320px)' srcset="./images/gallery/gallery-1-mobile.jpg 1x, ./images/gallery/gallery-1@2x.jpg 2x">
+                            <img src="./images/gallery/gallery-1.jpg" class="gallery-image" alt="Безопасно подстригаем">
+                        </picture> -->
+                    </li>
+                    <li class="gallery-item">
+                        <picture>
+                            <source srcset="./images/gallery/gallery-2.jpg 1x, ./images/gallery/gallery-2@2x.jpg 2x">
+                            <img src="./images/gallery/gallery-2.jpg" class="gallery-image" alt="Мажем пенкой">
+                        </picture>
+                    </li>
+                    <li class="gallery-item">
+                        <picture>
+                            <source srcset="./images/gallery/gallery-3.jpg 1x, ./images/gallery/gallery-3@2x.jpg 2x">
+                            <img src="./images/gallery/gallery-3.jpg" class="gallery-image" alt="Успокаиваем буйных клиентов">
+                        </picture>
+                    </li>
+                    <li class="gallery-item">
+                        <picture>
+                            <source srcset="./images/gallery/gallery-4.jpg 1x, ./images/gallery/gallery-4@2x.jpg 2x">
+                            <img src="./images/gallery/gallery-4.jpg" class="gallery-image" alt="Опасно подстригаем">
+                        </picture>
+                    </li>
                 </ul>
             </div>
         </section>

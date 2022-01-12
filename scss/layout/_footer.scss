@@ -141,6 +141,10 @@
         padding: 130px 0 130px 100px;
 
     }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image:  url(../images/footer/footer-bg@2x.png);
+    }
+
 }
 
 .adress-box{

@@ -91,7 +91,25 @@
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/slider/slider_img-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    
+    // Если у устройства пиксельная плотность 2 и больше примени следующие стили
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image:  linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url('../images/slider/slider_img-1@2x.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+        background-image:  linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url('../images/slider/slider_img-1@3x.jpg');
+    }
 }
 
+
+/* 
+96dpi - 1x
+115dpi - 1.2x
+144dpi - 1.5x
+192dpi - 2x
+288dpi - 3x
+384dpi - 4x 
+*/
 
 

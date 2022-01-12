@@ -681,7 +681,29 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-box {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("../images/slider/slider_img-1@2x.jpg");
+    background-image: -o-linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../images/slider/slider_img-1@2x.jpg");
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../images/slider/slider_img-1@2x.jpg");
+  }
+}
+@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (-o-min-device-pixel-ratio: 3/1), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .hero-box {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("../images/slider/slider_img-1@3x.jpg");
+    background-image: -o-linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../images/slider/slider_img-1@3x.jpg");
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../images/slider/slider_img-1@3x.jpg");
+  }
+}
 
+/* 
+96dpi - 1x
+115dpi - 1.2x
+144dpi - 1.5x
+192dpi - 2x
+288dpi - 3x
+384dpi - 4x 
+*/
 .about-image {
   display: inline-block;
   width: calc(50% - 15px);
@@ -779,6 +801,11 @@ a {
   background-image: url(../images/price/price-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-container#price {
+    background-image: url(../images/price/price-bg@2x.png);
+  }
 }
 
 .price-list {
@@ -1217,6 +1244,11 @@ a {
   .footer-contacts {
     width: 50%;
     padding: 130px 0 130px 100px;
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .footer-contacts {
+    background-image: url(../images/footer/footer-bg@2x.png);
   }
 }
 
